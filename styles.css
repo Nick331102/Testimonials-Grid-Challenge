@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --paragraph-text: grey;
+    --h3-text: grey;
+    /* fonts */
+    --heading-text: 'Lato', sans-serif;
+    --paragraph: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgba(200, 192, 192, 0.486);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__container {
+    max-width: 1000px;
+    background: rgba(241, 235, 236, 0);
+
+    display: grid;
+    grid-template-areas:
+        "dan dan dan john kira"
+        "jean pat pat pat kira";
+    grid-gap: 20px;
+    margin: 100px 10px;
+
+}
+
+.daniel__clifford {
+    grid-area: dan;
+    background-color: rgba(104, 19, 153, 0.911);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.76);
+
+}
+
+.quotes {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
+
+.john__walters {
+    grid-area: john;
+    background-color: rgb(75, 90, 104);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.76);
+
+}
+
+.jean__harmon {
+    grid-area: jean;
+    padding: 20px;
+    background-color: rgb(196, 179, 179);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.76);
+}
+
+.patrick__abrams {
+    grid-area: pat;
+    padding: 20px;
+    background-color: rgb(39, 36, 36);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.76);
+}
+
+.kira__whittle {
+    grid-area: kira;
+    padding: 20px;
+    background-color: rgb(171, 177, 163);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.76);
+}
+
+.name {
+    font-size: 1rem;
+
+}
+
+.test__img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+
+.image__container {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.headlines {
+    margin-left: 10px;
+}
+
+.verified {
+    color: var(--h3-text);
+    font-size: .8rem;
+}
+
+.name--daniel {
+    color: white;
+    font-size: 1rem;
+}
+
+.description--daniel {
+    font-size: .8rem;
+    color: rgba(184, 171, 171, 0.945);
+    line-height: 1.4;
+}
+
+
+.emphasis--daniel {
+    font-size: 1.2rem;
+    color: beige;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+
+.name--john {
+    color: white;
+    font-size: 1rem;
+}
+
+.description--john {
+    font-size: .8rem;
+    color: rgba(184, 171, 171, 0.945);
+    line-height: 1.4;
+
+}
+
+.emphasis--john {
+    font-size: 1.2rem;
+    color: beige;
+    margin-bottom: 15px;
+}
+
+.name--jean {
+    color: white;
+    font-size: 1rem;
+}
+
+.description--jean {
+    font-size: .8rem;
+    color: rgba(102, 93, 93, 0.945);
+    line-height: 1.4;
+
+}
+
+.emphasis--jean {
+    font-size: 1.2rem;
+    color: rgb(59, 59, 55);
+    margin-bottom: 15px;
+}
+
+.name--patrick {
+    color: white;
+    font-size: 1rem;
+}
+
+.description--patrick {
+    font-size: .8rem;
+    color: rgba(190, 176, 176, 0.945);
+    line-height: 1.4;
+
+}
+
+.emphasis--patrick {
+    font-size: 1.2rem;
+    color: rgb(228, 228, 216);
+    margin-bottom: 15px;
+}
+
+.name--kira {
+    color: white;
+    font-size: 1rem;
+}
+
+.description--kira {
+    font-size: .8rem;
+    color: rgba(59, 52, 52, 0.945);
+    line-height: 1.4;
+
+}
+
+.emphasis--kira {
+    font-size: 1.2rem;
+    color: rgb(2, 2, 1);
+    margin-bottom: 15px;
+}
+
+
+@media (max-width:895px) {
+    .grid__container {
+        grid-template-areas:
+            "dan dan john"
+            "jean pat pat"
+            "kira kira kira";
+
+    }
+}
+
+@media (max-width:649px) {
+    .grid__container {
+        grid-template-areas:
+            "dan"
+            "john"
+            "jean"
+            "pat"
+            "kira";
+
+    }
+}
